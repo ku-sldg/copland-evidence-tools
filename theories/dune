@@ -6,7 +6,24 @@
 (coq.theory
  (name CoplandEvidenceTools)
  (package rocq-copland-evidence-tools)
- (theories Stdlib RocqCandy RocqJSON CoplandSpec)
- 
  (synopsis "Tools for working with evidence in the Copland language"))
 
+(rule
+ (target copland_evidence_tools)
+ (deps
+  ; NOTE: We depend on the final generated file, after this is dont the build should be ready
+  (file FrontEnd.vo))
+ (action
+  (run
+   bake
+   --mode
+   build
+   --stubs
+   %{project_root}/../../stubs/
+   --out
+   copland_evidence_tools.cml
+   ../FrontEnd.cml)))
+
+(install
+ (section bin)
+ (files copland_evidence_tools))
