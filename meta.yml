@@ -28,6 +28,11 @@ dependencies:
       name: "rocq-candy"
       version: '{ >= "0.2.1" }'
       lib_name: "RocqCandy"  
+  - description: "[CLITools](https://github.com/ku-sldg/rocq-cli-tools)"
+    opam:
+      name: "rocq-cli-tools"
+      version: '{ >= "0.2.1" }'
+      lib_name: "CLITools"  
   - description: "[RocqJSON](https://github.com/ku-sldg/rocq-json)"
     opam:
       name: rocq-json

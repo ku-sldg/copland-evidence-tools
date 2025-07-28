@@ -23,6 +23,7 @@ This project provides tools and libraries for working with evidence in the Copla
 - Compatible OCaml versions: 4.12 or later
 - Additional dependencies:
   - [RocqCandy](https://github.com/ku-sldg/rocq-candy)
+  - [CLITools](https://github.com/ku-sldg/rocq-cli-tools)
   - [RocqJSON](https://github.com/ku-sldg/rocq-json)
   - [CoplandSpec](https://github.com/ku-sldg/copland-spec)
   - [Bake](https://github.com/Durbatuluk1701/bake)
