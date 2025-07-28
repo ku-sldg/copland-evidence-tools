@@ -22,6 +22,7 @@ depends: [
   "rocq-candy" { >= "0.2.1" }
   "rocq-json" { >= "0.2.0" }
   "rocq-copland-spec" { >= "0.2.0" }
+  "bake" { >= "0.1.0" }
 ]
 
 tags: [
