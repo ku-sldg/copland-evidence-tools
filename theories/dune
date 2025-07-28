@@ -1,0 +1,12 @@
+; This file was generated from `meta.yml`, please do not edit manually.
+; Follow the instructions on https://github.com/coq-community/templates to regenerate.
+
+(include_subdirs qualified)
+
+(coq.theory
+ (name CoplandEvidenceTools)
+ (package rocq-copland-evidence-tools)
+ (theories Stdlib RocqCandy RocqJSON CoplandSpec)
+ 
+ (synopsis "Tools for working with evidence in the Copland language"))
+
