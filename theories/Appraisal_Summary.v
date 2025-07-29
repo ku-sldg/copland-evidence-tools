@@ -85,11 +85,6 @@ Definition fold_appsumm (appsumm:AppraisalSummary) : bool :=
   forallb (fun ls => forallb id ls) targbools.
 
 
-Global Instance AppraisalSummaryJsonifiable `{Stringifiable ASP_ID, Stringifiable (Map TARG_ID bool)} : Jsonifiable AppraisalSummary.
-eapply Build_Jsonifiable with 
-(to_JSON := map_serial_serial_to_JSON)
-(from_JSON := map_serial_serial_from_JSON).
-intros.
-rewrite canonical_jsonification_map_serial_serial in *.
-eauto.
+Global Instance AppraisalSummaryJsonifiable `{Stringifiable ASP_ID, Jsonifiable (Map TARG_ID bool)} : Jsonifiable AppraisalSummary.
+ltac1:(typeclasses eauto).
 Qed.
