@@ -19,8 +19,8 @@ Here is the usage we are aiming for:
 *)
 
 Definition request_arg_spec : arg_spec := {|
-  arg_name := "request";
-  arg_kind := ArgPositional;
+  arg_name := "req";
+  arg_kind := ArgOption;
   arg_required := true;
   arg_help := "The request JSON value.";
   arg_default := None
