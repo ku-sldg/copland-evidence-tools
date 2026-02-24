@@ -1,0 +1,354 @@
+{
+  "TYPE": "REQUEST",
+  "ACTION": "TypeCheck",
+  "TERM": {
+    "TERM_CONSTRUCTOR": "lseq",
+    "TERM_BODY": [
+      {
+        "TERM_CONSTRUCTOR": "lseq",
+        "TERM_BODY": [
+          {
+            "TERM_CONSTRUCTOR": "asp",
+            "TERM_BODY": {
+              "ASP_CONSTRUCTOR": "ASPC",
+              "ASP_BODY": {
+                "ASP_ID": "hamr_readfile_range_many",
+                "ASP_ARGS": {
+                  "asp_id_appr": "hamr_readfile_range_many",
+                  "attestation_report_filepath": "/Users/adampetz/Documents/Summer_2025/INSPECTA-demo/system/hamr/microkit/attestation//sysml_attestation_report.json",
+                  "env_var_golden": "",
+                  "filepath_golden": "/Users/adampetz/Documents/Summer_2025/INSPECTA-demo/system/hamr/microkit/attestation//hamr_maestro_golden_evidence.json",
+                  "report_filepath": "/Users/adampetz/Documents/Summer_2025/INSPECTA-demo/system/hamr/microkit/attestation//sysml_attestation_report.json",
+                  "targ_id_appr": "hamr_readfile_range_many_targ"
+                },
+                "ASP_PLC": "P0",
+                "ASP_TARG_ID": "hamr_readfile_range_many_targ"
+              }
+            }
+          },
+          {
+            "TERM_CONSTRUCTOR": "asp",
+            "TERM_BODY": {
+              "ASP_CONSTRUCTOR": "ASPC",
+              "ASP_BODY": {
+                "ASP_ID": "sig",
+                "ASP_ARGS": {
+                  "asp_id_appr": "sig",
+                  "targ_id_appr": "sig_targid"
+                },
+                "ASP_PLC": "P0",
+                "ASP_TARG_ID": "sig_targid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "TERM_CONSTRUCTOR": "asp",
+        "TERM_BODY": {
+          "ASP_CONSTRUCTOR": "APPR"
+        }
+      }
+    ]
+  },
+  "EVIDENCE": [
+    {
+      "RawEv": []
+    },
+    {
+      "EvidenceT_CONSTRUCTOR": "mt_evt"
+    }
+  ],
+  "ATTESTATION_SESSION": {
+    "Session_Plc": "P0",
+    "Plc_Mapping": {
+      "P0": "localhost:5000",
+      "P1": "localhost:5001",
+      "P2": "localhost:5002",
+      "P3": "localhost:5003",
+      "P4": "localhost:5004",
+      "P5": "localhost:5005",
+      "P6": "localhost:5006"
+    },
+    "PubKey_Mapping": {},
+    "Session_Context": {
+      "ASP_Types": {
+        "magic_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "large_output": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "attest": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "appraise": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "certificate": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "hashevidence": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "hashfile": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "hashfile_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "invary_get_measurement": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "invary_get_measurement_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "provision": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "readfile": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "readfile_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "selinux_pol_dump": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "sig": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "ALL"
+          },
+          "ATTRS": []
+        },
+        "sig_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "sig_tpm": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "ALL"
+          },
+          "ATTRS": []
+        },
+        "sig_tpm_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "uptime": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "hashdir": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "run_command_verus_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "run_command_cargo_verus": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "verus_compare_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "run_command_rocq": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "provision_goldenevidence": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "run_command_rocq_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "run_command_verus": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "readfile_range": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "run_command_autoverus": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "goldenevidence_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "verus_compare": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 4,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "readfile_range_many_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "hamr_readfile_range_many": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        }
+      },
+      "ASP_Comps": {
+        "attest": "magic_appr",
+        "certificate": "magic_appr",
+        "appraise": "magic_appr",
+        "hashevidence": "NULL",
+        "hashfile": "hashfile_appr",
+        "invary_get_measurement": "invary_get_measurement_appr",
+        "provision": "NULL",
+        "readfile": "readfile_appr",
+        "selinux_pol_dump": "hashfile_appr",
+        "sig": "sig_appr",
+        "sig_tpm": "sig_tpm_appr",
+        "uptime": "NULL",
+        "hamr_readfile_range_many": "readfile_range_many_appr",
+        "run_command_cargo_verus": "run_command_verus_appr",
+        "provision_goldenevidence": "magic_appr",
+        "run_command_rocq": "run_command_rocq_appr",
+        "run_command_autoverus": "magic_appr",
+        "run_command_verus": "run_command_verus_appr",
+        "readfile_range": "goldenevidence_appr",
+        "hashdir": "goldenevidence_appr",
+        "verus_compare": "verus_compare_appr"
+      }
+    }
+  }
+}
