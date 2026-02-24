@@ -1,0 +1,209 @@
+{
+  "TYPE": "REQUEST",
+  "ACTION": "TypeCheck",
+  "ATTESTATION_SESSION": {
+    "Session_Plc": "P0",
+    "Plc_Mapping": {
+      "P0": "localhost:5000",
+      "P1": "localhost:5001",
+      "P2": "localhost:5002",
+      "P3": "localhost:5003",
+      "P4": "localhost:5004",
+      "P5": "localhost:5005",
+      "P6": "localhost:5006"
+    },
+    "PubKey_Mapping": {},
+    "Session_Context": {
+      "ASP_Types": {
+        "magic_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "large_output": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "ALL"
+          },
+          "ATTRS": []
+        },
+        "attest": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "appraise": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "certificate": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "hashevidence": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "hashfile": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "hashfile_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "invary_get_measurement": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "invary_get_measurement_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "provision": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "readfile": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "readfile_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "selinux_pol_dump": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        },
+        "sig": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "ALL"
+          },
+          "ATTRS": []
+        },
+        "sig_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "sig_tpm": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "ALL"
+          },
+          "ATTRS": []
+        },
+        "sig_tpm_appr": {
+          "FWD": {
+            "FWD": "REPLACE",
+            "_BODY": 1
+          },
+          "ATTRS": []
+        },
+        "uptime": {
+          "FWD": {
+            "FWD": "EXTEND",
+            "_BODY": 1,
+            "EvInSig": "NONE"
+          },
+          "ATTRS": []
+        }
+      },
+      "ASP_Comps": {
+        "attest": "magic_appr",
+        "certificate": "magic_appr",
+        "appraise": "magic_appr",
+        "hashevidence": "NULL",
+        "hashfile": "hashfile_appr",
+        "invary_get_measurement": "invary_get_measurement_appr",
+        "provision": "NULL",
+        "readfile": "readfile_appr",
+        "selinux_pol_dump": "hashfile_appr",
+        "sig": "sig_appr",
+        "sig_tpm": "sig_tpm_appr",
+        "uptime": "NULL"
+      }
+    }
+  },
+  "EVIDENCE": [
+    {
+      "RawEv": []
+    },
+    {
+      "EvidenceT_CONSTRUCTOR": "mt_evt"
+    }
+  ],
+  "TERM": {
+    "TERM_CONSTRUCTOR": "lseq",
+    "TERM_BODY": [
+      {
+        "TERM_CONSTRUCTOR": "asp",
+        "TERM_BODY": {
+          "ASP_CONSTRUCTOR": "ASPC",
+          "ASP_BODY": {
+            "ASP_ID": "attest",
+            "ASP_ARGS": {}
+          }
+        }
+      },
+      {
+        "TERM_CONSTRUCTOR": "asp",
+        "TERM_BODY": {
+          "ASP_CONSTRUCTOR": "APPR"
+        }
+      }
+    ]
+  }
+}
