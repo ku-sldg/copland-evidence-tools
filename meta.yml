@@ -10,7 +10,7 @@ authors:
   - name: "Will Thomas"
     email: "30wthomas@ku.edu"
 opam-file-maintainer: "30wthomas@ku.edu" # Need a strong default here or we will accidentally email a Coq developer
-opam-file-version: "0.2.0"
+opam-file-version: "0.6.0"
 
 ######################################################
 # NOTE: Optional Extra Info
@@ -26,7 +26,7 @@ dependencies:
   - description: "[RocqCandy](https://github.com/ku-sldg/rocq-candy)"
     opam:
       name: "rocq-candy"
-      version: '{ >= "0.2.1" }'
+      version: '{ >= "0.6.0" }'
       lib_name: "RocqCandy"  
   - description: "[CLITools](https://github.com/ku-sldg/rocq-cli-tools)"
     opam:
@@ -36,12 +36,12 @@ dependencies:
   - description: "[RocqJSON](https://github.com/ku-sldg/rocq-json)"
     opam:
       name: rocq-json
-      version: '{ >= "0.2.0" }'
+      version: '{ >= "0.6.0" }'
       lib_name: RocqJSON
   - description: "[CoplandSpec](https://github.com/ku-sldg/copland-spec)"
     opam:
       name: rocq-copland-spec
-      version: '{ >= "0.2.1" }'
+      version: '{ >= "0.6.0" }'
       lib_name: CoplandSpec
   - description: "[Bake](https://github.com/Durbatuluk1701/bake)"
     opam:
@@ -50,7 +50,7 @@ dependencies:
   - description: "[EasyBakeCakeML](https://github.com/Durbatuluk1701/EasyBakeCakeML)"
     opam:
       name: rocq-EasyBakeCakeML
-      version: '{ >= "0.1.0" }'
+      version: '{ >= "0.5.0" }'
       lib_name: "EasyBakeCakeML"
 coq_trans_deps_workaround: true # Default false if we dont need libraries with transitive dependencies, but if we do, then we need to set this to true
 # This is due to https://github.com/ocaml/dune/issues/11483
